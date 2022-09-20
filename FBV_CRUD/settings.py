@@ -75,13 +75,23 @@ WSGI_APPLICATION = 'FBV_CRUD.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dcdji4uj5u2n3m',
+        'USER': 'ztsmqdcpvcpzjt',
+        'PASSWORD': '9d044660591f3e43b607c83d6e008917ee4fd25a5f84493d60e930091fd55b66',
+        'HOST': 'ec2-3-219-229-143.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
