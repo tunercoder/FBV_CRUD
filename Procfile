@@ -1,0 +1,1 @@
+web: gunicorn FBV_CRUD.wsgi
